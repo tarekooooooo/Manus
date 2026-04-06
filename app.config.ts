@@ -32,7 +32,7 @@ const env = {
   appSlug: "tarek-store-mobile",
   // S3 URL of the app logo - set this to the URL returned by generate_image when creating custom logo
   // Leave empty to use the default icon from assets/images/icon.png
-  logoUrl: "",
+  logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/89007097/erD2qDM7kVuFQ279bPniKe/icon-MWhn6Htoho9c7aZWNgbr5K.webp",
   scheme: schemeFromBundleId,
   iosBundleId: bundleId,
   androidPackage: bundleId,
