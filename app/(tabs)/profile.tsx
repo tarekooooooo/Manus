@@ -48,7 +48,9 @@ function OrderCard({ order }: any) {
 
       <View className="flex-row justify-between mb-2">
         <Text className="text-sm text-muted">عدد المنتجات: {order.items.length}</Text>
-        <Text className="font-bold text-primary">{order.total.toFixed(2)} ر.س</Text>
+        <Text className="text-foreground font-bold">
+          {order.total.toFixed(2)} ر.س
+        </Text>
       </View>
 
       <Text className="text-xs text-muted">
@@ -170,7 +172,15 @@ export default function ProfileScreen() {
         )}
 
         {/* الخيارات */}
-        <View className="px-4 py-4">
+        <View className="px-4 py-4 gap-3">
+          <Pressable
+            onPress={() => router.push("./admin")}
+            className="p-3 rounded-lg border"
+            style={{ borderColor: colors.primary + "40", backgroundColor: colors.primary + "10" }}
+          >
+            <Text className="text-primary text-center font-semibold">🔐 لوحة التحكم</Text>
+          </Pressable>
+
           <Pressable
             onPress={() => {
               Alert.alert("تسجيل الخروج", "هل تريد تسجيل الخروج؟", [
